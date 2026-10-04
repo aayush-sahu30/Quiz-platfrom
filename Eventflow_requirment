@@ -1,0 +1,30 @@
+flowchart LR
+
+    SYSTEM["EventFlow Requirements"]
+
+    SYSTEM --> FR["Functional Requirements"]
+    SYSTEM --> NFR["Non-Functional Requirements"]
+
+    FR --> F1["Authentication"]
+    FR --> F2["RBAC"]
+    FR --> F3["Quiz Management"]
+    FR --> F4["Participant Management"]
+    FR --> F5["Real-Time Quiz"]
+    FR --> F6["Answer Processing"]
+    FR --> F7["Scoring"]
+    FR --> F8["Leaderboard"]
+    FR --> F9["Results"]
+    FR --> F10["Reconnection"]
+
+    NFR --> N1["Performance"]
+    NFR --> N2["Scalability"]
+    NFR --> N3["Security"]
+    NFR --> N4["Reliability"]
+    NFR --> N5["Availability"]
+    NFR --> N6["Consistency"]
+    NFR --> N7["Recoverability"]
+    NFR --> N8["Maintainability"]
+    NFR --> N9["Testability"]
+    NFR --> N10["Observability"]
+    NFR --> N11["Usability"]
+    NFR --> N12["Cost Efficiency"]
