@@ -1,0 +1,71 @@
+quiz-platform/
+│
+├── frontend/
+│   ├── participant/
+│   ├── admin/
+│   └── shared/
+│
+├── worker/
+│   ├── src/
+│   │   ├── index.ts
+│   │   │
+│   │   ├── routes/
+│   │   │   ├── auth.ts
+│   │   │   ├── quiz.ts
+│   │   │   ├── participant.ts
+│   │   │   ├── result.ts
+│   │   │   └── websocket.ts
+│   │   │
+│   │   ├── auth/
+│   │   │   ├── verifyJwt.ts
+│   │   │   ├── rbac.ts
+│   │   │   └── roomTicket.ts
+│   │   │
+│   │   ├── validation/
+│   │   │   ├── quiz.schema.ts
+│   │   │   ├── answer.schema.ts
+│   │   │   └── user.schema.ts
+│   │   │
+│   │   ├── services/
+│   │   │   ├── quizService.ts
+│   │   │   ├── participantService.ts
+│   │   │   └── resultService.ts
+│   │   │
+│   │   ├── queue/
+│   │   │   └── answerConsumer.ts
+│   │   │
+│   │   └── lib/
+│   │       ├── db.ts
+│   │       ├── jwt.ts
+│   │       ├── rateLimit.ts
+│   │       └── errors.ts
+│   │
+│   └── wrangler.jsonc
+│
+├── durable-objects/
+│   ├── QuizCoordinator.ts
+│   ├── QuizShard.ts
+│   ├── websocket/
+│   │   ├── connectionManager.ts
+│   │   └── messageHandler.ts
+│   ├── quiz/
+│   │   ├── quizState.ts
+│   │   └── admission.ts
+│   └── leaderboard/
+│       └── leaderboardManager.ts
+│
+├── database/
+│   ├── schema.sql
+│   └── migrations/
+│
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── load/
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
+├── ARCHITECTURE.md
+└── README.md
