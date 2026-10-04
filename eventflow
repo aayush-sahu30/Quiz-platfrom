@@ -1,0 +1,13 @@
+---
+config:
+  theme: dark
+  layout: dagre
+  look: handDrawn
+---
+flowchart LR
+    SYSTEM["EventFlow Requirements"] --> FR["Functional Requirements"] & NFR["Non-Functional Requirements"]
+    FR --> F1["Authentication"] & F2["RBAC"] & F3["Quiz Management"] & F4["Participant Management"] & F5["Real-Time Quiz"] & F6["Answer Processing"] & F7["Scoring"] & F8["Leaderboard"] & F9["Results"] & F10["Reconnection"]
+    NFR --> N1["Performance"] & N2["Scalability"] & N3["Security"] & N4["Reliability"] & N5["Availability"] & N6["Consistency"] & N7["Recoverability"] & N8["Maintainability"] & N9["Testability"] & N10["Observability"] & N11["Usability"] & N12["Cost Efficiency"]
+    n1["Text Block"]
+
+    n1@{ shape: text}
