@@ -748,7 +748,6 @@ flowchart TD
 
 | Previous concern | Final solution |
 | :--- | :--- |
-| Offline-first direction | Removed; platform is online-only |
 | Separate Socket.IO server | Removed; Durable Object owns the live session |
 | Redis required from day one | Removed from the core architecture; add only after measured need |
 | Timer controlled by client | Server / Durable Object controls the authoritative deadline |
